@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>massage website</title>
 </head>
+<body>
 
 <header>
     <nav>
@@ -12,7 +13,7 @@
             <li>
                 <a href="name">Název</a>
                 <a href="reservation">Rezervace</a>
-                <a href="massages">Masáže</a>
+                <a href="#massages">Masáže</a>
                 <a href="contacts">Kontakt </a>
             </li>
         </ul>
@@ -20,12 +21,84 @@
 </header>
 
 <main>
-    <section class="welcome">
+    <!-- Horní sekce s backround img a rezervací -->
+    <section class="welcome-section">
         <h1>Dopřejte si chvilku klidu a relaxace</h1>
-        <button type="button" id="reservation">Rezervace</button>
+        <button type="button" class="light-reservation-btn" id="reservation-btn">Rezervace</button>
     </section>
+
+    <!-- Sekce s různými druhy masáží -->
+    <section class="massages-section">
+        <a id="massages"></a>
+        <h2>Masáže</h2> 
+
+        <div class="massage-type-container">
+            <div class="massage-types">
+                <h3>Relaxační masáž</h3>
+                <p>60 min / 850 Kč</p>
+                <button type="button" id="reservation-btn" class="reservation-in-massage-container">Rezervace</button>
+            </div>
+            <div class="massage-types">
+                <h3>Aromatická masáž</h3>
+                <p>60 min / 850 Kč</p>
+                <button type="button"  id="reservation-btn" class="reservation-in-massage-container">Rezervace</button>
+            </div>
+            <div class="massage-types">
+                <h3>Sportovní masáž</h3>
+                <p>60 min / 850 Kč</p>
+                <button type="button" id="reservation-btn" class="reservation-in-massage-container">Rezervace</button>
+            </div>
+        
+    </div>
+    </section>
+
+    <!-- Sekce se speciální nabídkou masáží -->
+     <section class="specials-offer">
+        <h2>Speciální nabídka</h2>
+        <div class="specials-container">
+
+            <div class="specials-relax">
+                <h3>Relaxační masaáž s lávovými kameny</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, non ipsum similique cum nesciunt enim consequatur delectus, pariatur ratione aperiam molestias nam. Tenetur mollitia explicabo itaque a error repudiandae cupiditate.</p>
+                <button type="button" id="reservation-btn" class="reservation-specials-btn">60 min/1000 Kč</button>
+                <img src="" alt="Obrázek relaxační masáže lávovými kameny" >
+            </div>
+            <div class="specials-relax">
+                <h3>Sportovní masáž s lávovými kameny</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, non ipsum similique cum nesciunt enim consequatur delectus, pariatur ratione aperiam molestias nam. Tenetur mollitia explicabo itaque a error repudiandae cupiditate.</p>
+                <button type="button" id="reservation-btn" class="reservation-specials-btn">60 min/1000 Kč</button>
+                <img src="" alt="Obrázek sportovní masáže lávovými kameny" >
+            </div>
+     </div>
+     </section>
+
+     <!-- Sekce určená pro rezervace -->
+      <section class="reservations-container">
+        <!-- css background img -->
+         <h2>Rezervujte se ještě dnes</h2>
+         <button type="button" class="light-reservation-btn" id="reservation-btn">Rezervace</button>
+      </section>
 </main>
-<body>
+<footer>
+    <section class="footer">
+        <div class="contacts">
+            <ul>
+                <li>Tel: 678 890 899</li>
+                <li>Email: email@email.cz</li>
+                <li>Adresa: ffsf Praha 9</li>
+            </ul>
+        </div>
+        <div class="where-to-find-us">
+            <!-- google maps -->
+             <h3>Jak se k nám dostanete:</h3>
+             <ul>
+                <li>Z autobusové zastávky Pod Nouzovem a pak 5min chůze. </li>
+                <li>Nebo z nádraží Praha - Kbely a pak 9min chůze.</li>
+             </ul>
+
+        </div>
+    </section>
+</footer>
     
 </body>
 </html>
