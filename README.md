@@ -1,5 +1,6 @@
 Massage Studio – Landing Page (currently working on)
-A responsive single-page website for a fictional massage studio. The project focuses on layout structure, clean design, and section organization based on a custom Figma design.
+A responsive single-page website for a fictional massage studio. 
+The project focuses on layout structure, clean design, and section organization based on a custom Figma design.
 
 Features:
 - Fully responsive layout using mobile-first approach
