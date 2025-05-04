@@ -52,6 +52,14 @@ nav a:hover {
 
 }
 
+#overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     #open-sidebar-button, #close-sidebar-button {
         display: block;
@@ -69,6 +77,10 @@ nav a:hover {
 
     nav.show {
         right: 0;
+    }
+
+    nav.show ~ #overlay{
+        display: block;
     }
 
 nav ul {
