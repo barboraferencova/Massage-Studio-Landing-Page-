@@ -9,3 +9,52 @@ li, a {
     text-decoration: none;
     color: #000;
 }
+
+nav, nav ul {
+    background-color: #B08968;
+    display: flex;
+}
+
+.logo {
+    margin-right: auto;
+    padding: 1em;
+}
+
+nav a {
+    display: flex;
+    padding: 1em 2em;
+    transition: background-color 150ms ease;
+}
+
+nav a:hover {
+    background-color: beige;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: min(12em, 100%);
+        z-index: 10;
+        border-left: 1px solid beige;
+        display: block;
+    }
+
+
+nav ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+nav a, .logo {
+    width: 100%;
+    padding-left: 2.5em;
+}
+
+.logo {
+  border-bottom: 0.5px solid beige;
+}
+
+
+}
