@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+svg {
+    fill: #000;
+}
+
 li, a {
     list-style: none;
     text-decoration: none;
